@@ -44,10 +44,10 @@
 
   /* tu logo difuminado como textura extra (se activa solo si subes la imagen) */
   /* TU LOGO COMO FONDO DE LA PÁGINA, bien visible, que se funde hacia abajo */
-  :root{--hero:min(100vw,720px,34vh)}
+  :root{--hero:min(100vw,720px,29vh)}
   .bgimg{position:absolute;top:0;left:50%;width:var(--hero);height:var(--hero);z-index:-2;transform:translateX(-50%);
     background-size:cover;background-position:center;opacity:0;transition:opacity 1s;
-    -webkit-mask-image:linear-gradient(180deg,#000 62%,transparent 98%);mask-image:linear-gradient(180deg,#000 62%,transparent 98%)}
+    -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 22%,#000 78%,transparent 100%),linear-gradient(180deg,transparent 0%,#000 14%,#000 50%,transparent 80%);mask-image:linear-gradient(90deg,transparent 0%,#000 22%,#000 78%,transparent 100%),linear-gradient(180deg,transparent 0%,#000 14%,#000 50%,transparent 80%);-webkit-mask-composite:source-in;mask-composite:intersect}
   .bgimg.on{opacity:1}
   .shade{display:none}
   /* Fondo: degradado diagonal suave, azul profundo a blanco */
